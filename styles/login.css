@@ -1,0 +1,43 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/login-bg.jpg');
+    display: grid;
+    place-items: center;
+}
+*::placeholder{
+    color: rgb(188, 188, 188) !important;
+}
+.greycover{
+    z-index: -58;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.742);
+}
+
+form{
+    width: 300px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    color: #fff;
+}
+
+input, button{
+    padding: 15px !important;
+}
+input{
+    padding-left: 40px !important;
+}
+i{
+    left: 10px;
+    top: 50% ;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: rgb(234, 234, 234);
+}
+i.fa-user{
+    bottom: -3px !important;
+}

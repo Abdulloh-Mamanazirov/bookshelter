@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="./images/group.svg" type="image/x-icon">
+    <title>BookShelter</title>
+</head>
+<body>
+
+
+<nav class="d-flex align-items-center justify-content-between gap-5 px-5 py-3 border-bottom">
+    <img src="./images/home-logo.png" alt="logo">
+    <div class="position-relative flex-grow-1"><i class="fa fa-search position-absolute" aria-hidden="true"></i><input type="text" class="form-control search bg-light rounded-5 p-3" placeholder="Search books"></div>
+    <div class="d-flex align-items-center gap-3"><i class="fa fa-sun text-warning fa-2x" aria-hidden="true"></i><btn class="btn logout btn-primary px-4 py-2">Logout</btn></div>
+</nav>
+<section class="undernav d-flex align-items-center border-bottom justify-content-between py-2 px-5">
+    <p class="p-0 m-0 fw-semibold">Showing <span id="totalBooks" class="text-decoration-underline">0</span> Result(s)</p>
+    <button class="m-0 btn text-bg-secondary order"><i class="fa fa-calendar pe-1" aria-hidden="true"></i> Order by newest</button>
+</section>
+
+<main>
+    <aside class="border-end">
+    <h2>Bookmarks <i class="fa fa-bookmark text-danger" aria-hidden="true"></i></h2>
+    <p class="fw-medium">If you don’t like to read, you haven’t found the right book</p>
+    <span class=" bookmarks"></span>
+    </aside>
+    <section>
+        <h2 id="info" class="text-center"></h2>
+        <div class="cards d-flex align-items-center justify-content-center gap-5 flex-wrap">
+            
+        </div>
+        <div class="btns-group d-flex gap-1 justify-content-center mt-4">
+            <button id="previous" class="btn btn-outline-dark"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <span class="pagination d-flex align-items-center gap-1">
+                
+            </span>
+            <button id="next" class="btn btn-outline-dark"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+    </section>
+</main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
